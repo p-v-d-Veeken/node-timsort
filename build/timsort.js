@@ -754,10 +754,6 @@
   })();
 
   function sort(array, compare, lo, hi) {
-    if (!Array.isArray(array)) {
-      throw new TypeError('Can only sort arrays');
-    }
-
     if (!compare) {
       compare = alphabeticalCompare;
     } else if (typeof compare !== 'function') {
